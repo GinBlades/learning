@@ -1,0 +1,23 @@
+AppBundle\Entity\Topic:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\TopicRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+            unique: true
+        description:
+            type: string
+            length: 255
+            nullable: true
+        skillLevel:
+            type: integer
+            column: skill_level
+    lifecycleCallbacks: {  }

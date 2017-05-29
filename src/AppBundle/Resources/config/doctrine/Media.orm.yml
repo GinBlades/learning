@@ -1,0 +1,34 @@
+AppBundle\Entity\Media:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\MediaRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        title:
+            type: string
+            length: 255
+        description:
+            type: string
+            length: 255
+            nullable: true
+        mediaType:
+            type: string
+            length: 255
+            column: media_type
+        duration:
+            type: integer
+            nullable: true
+        pageCount:
+            type: integer
+            nullable: true
+            column: page_count
+        skillLevel:
+            type: integer
+            nullable: true
+            column: skill_level
+    lifecycleCallbacks: {  }
