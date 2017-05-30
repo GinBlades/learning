@@ -1,0 +1,35 @@
+
+topic_index:
+    path:     /topic
+    defaults: { _controller: AppBundle:Topic:index }
+    methods: [GET]
+
+topic_show:
+    path:     /topic/{id}
+    defaults: { _controller: AppBundle:Topic:show }
+    methods: [GET]
+
+topic_new:
+    path:     /topic/new
+    defaults: { _controller: AppBundle:Topic:new }
+    methods: [GET]
+
+topic_edit:
+    path:     /topic/{id}/edit
+    defaults: { _controller: AppBundle:Topic:edit }
+    methods: [GET]
+
+topic_create:
+    path:     /topic
+    defaults: { _controller: AppBundle:Topic:create }
+    methods: [POST]
+
+topic_update:
+    path:     /topic/{id}/edit
+    defaults: { _controller: AppBundle:Topic:update }
+    methods: [PUT, POST, PATCH]
+
+topic_delete:
+    path:     /topic/{id}
+    defaults: { _controller: AppBundle:Topic:delete }
+    methods: [POST, DELETE]
