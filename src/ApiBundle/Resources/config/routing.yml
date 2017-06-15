@@ -1,0 +1,23 @@
+api_homepage:
+    path:     /api
+    defaults: { _controller: ApiBundle:Default:index }
+
+api_topic_index:
+    path:     /topic
+    defaults: { _controller: ApiBundle:Topic:index }
+    methods: [GET]
+
+api_topic_new:
+    path:     /topic/new
+    defaults: { _controller: ApiBundle:Topic:new }
+    methods: [GET]
+
+api_topic_show:
+    path:     /topic/{id}
+    defaults: { _controller: ApiBundle:Topic:show }
+    methods: [GET]
+
+api_topic_edit:
+    path:     /topic/{id}/edit
+    defaults: { _controller: ApiBundle:Topic:edit }
+    methods: [GET]
